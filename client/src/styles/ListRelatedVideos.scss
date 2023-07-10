@@ -1,0 +1,27 @@
+.list_related_videos {
+  .title_related {
+    font-size: var(--color-md);
+  }
+  .content_related_videos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    width: 200px;
+    height: 700px;
+    overflow: scroll;
+    .related_video_card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+      cursor: pointer;
+      .thumbnail_related {
+        width: 100%;
+      }
+      .name_related {
+        font-size: 11px;
+        word-break: break-all;
+      }
+    }
+  }
+}

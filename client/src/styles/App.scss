@@ -1,0 +1,143 @@
+:root {
+  --ff-pri: "Roboto", sans-serif;
+  --color-pri: #4e42d4;
+  --color-pri-light: #d4d2ee;
+  --color-sec: #ffe174;
+  --color-light: #ffffff;
+  --color-gray: #b6b6b6;
+  --color-dark: black;
+  --color-silver: #dddddd;
+  --color-green: #00bf63;
+  --color-green-light: #48e297;
+  --color-bg: #f9f9f9;
+  --fs-sm: 12px;
+  --fs-13: 13px;
+  --fs-14: 14px;
+  --fs-md: 15px;
+  --fs-16: 16px;
+  --fs-17: 17px;
+  --fs-lg: 18px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-pri);
+}
+body {
+  background-color: var(--color-bg);
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: black;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+[type="button"],
+[type="reset"],
+[type="submit"],
+button,
+a {
+  -webkit-appearance: none;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+.btn-check:focus + .btn-success,
+.btn-success:focus {
+  color: unset;
+  background-color: unset;
+  border-color: unset;
+  box-shadow: unset;
+}
+/* Width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Style*/
+::-webkit-scrollbar-thumb {
+  background: var(--color-pri);
+  border-radius: 25px;
+}
+
+/* hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+hr {
+  margin: 0.25rem 0;
+  background-color: var(--color-silver);
+  opacity: 1;
+}
+hr:not([size]) {
+  height: 2px;
+}
+.table > :not(caption) > * > * {
+  padding: 0.5rem 0.5rem !important;
+}
+
+.row {
+  --bs-gutter-x: unset;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input::-webkit-file-upload-button {
+  display: none;
+}

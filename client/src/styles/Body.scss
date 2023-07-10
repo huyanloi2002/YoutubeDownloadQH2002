@@ -1,0 +1,56 @@
+.body_youtube_downloader {
+  height: 100vh;
+  padding: 0.5rem;
+  .content_youtube_downloader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: var(--color-light);
+    border: 2px solid var(--color-silver);
+    border-radius: 5px;
+    height: 100%;
+    .title_download {
+      text-transform: uppercase;
+      font-weight: 900;
+      color: var(--color-pri);
+      padding-top: 1rem;
+    }
+    .form_info_download {
+      display: flex;
+      justify-content: center;
+      padding: 0.25rem;
+      background-color: var(--color-pri);
+      border-radius: 5px;
+      .form-group {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .input_get_info {
+          padding: 1rem;
+          width: 400px;
+          border: none;
+          font-size: var(--fs-md);
+          padding-right: 6rem;
+        }
+        .btn_get_info {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          gap: 0.25rem;
+          font-size: var(--fs-13);
+          color: var(--color-light);
+          font-weight: 700;
+          cursor: pointer;
+          border: none;
+          outline: none;
+          padding: 1rem;
+          margin-right: 0.15rem;
+          border-radius: 5px;
+          background-color: var(--color-pri);
+        }
+      }
+    }
+  }
+}
