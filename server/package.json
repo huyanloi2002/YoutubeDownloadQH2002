@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "build": "webpack --config index.js"
+    "build": "index.js build"
   },
   "author": "quanghuyu19112002",
   "license": "ISC",
@@ -21,6 +21,7 @@
     "ytdl-core": "^4.11.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "webpack-cli": "^5.1.4"
   }
 }
